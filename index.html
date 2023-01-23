@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- * sign in page -->
+    <div class="wrapper login">
+      <div class="container">
+        <div class="col-left-clicked col-left" id="col-left-id">
+          <div class="login-text">
+            <h2>Welcome!</h2>
+            <p>Create your account.<br />For Free!</p>
+
+            <!-- * sign up page -->
+            <div class="signup-form dnone" id="signup-form-id">
+              <div class="signup-top">
+                <div class="signup-t-right">
+                  <p>
+                    <label for="fname">First Name <span>*</span></label>
+                    <input
+                      type="text"
+                      id="fname"
+                      placeholder="First Name"
+                      required
+                    />
+                  </p>
+                  <p>
+                    <label for="lname">Last Name <span>*</span></label>
+                    <input
+                      type="text"
+                      id="lname"
+                      placeholder="Last Name"
+                      required
+                    />
+                  </p>
+                </div>
+                <div class="singup-t-left">
+                  <p class="profile-container">
+                    <label> Profile picture <span>*</span></label>
+                    <input
+                      type="file"
+                      id="profile-pic"
+                      required
+                      style="display: none"
+                    />
+                    <label for="profile-pic" class="profile-label"
+                      ><i class="fa-solid fa-cloud-arrow-up"></i>
+                    </label>
+                  </p>
+                </div>
+              </div>
+              <div class="signup-bottom">
+                <div class="signup-b-right">
+                  <p>
+                    <label for="number">Mobile Number <span>*</span></label>
+                    <input
+                      type="number"
+                      class="number"
+                      id="number"
+                      placeholder="Mobile number"
+                      required
+                    />
+                  </p>
+                  <p>
+                    <label for="email-signup">Email <span>*</span></label>
+                    <input
+                      type="email"
+                      id="email-signup"
+                      placeholder="Email"
+                      required
+                    />
+                  </p>
+                  <p>
+                    <label for="pwd-signup">Password <span>*</span></label>
+                    <input
+                      type="password"
+                      id="pwd-signup"
+                      placeholder="Password"
+                      required
+                    />
+                  </p>
+                  <p>
+                    <label for="pwd-signup-re"
+                      >Re-enter Password <span>*</span></label
+                    >
+                    <input
+                      type="password"
+                      id="pwd-signup-re"
+                      placeholder="Re-enter password"
+                      required
+                    />
+                  </p>
+                </div>
+                <div class="signup-b-left">
+                  <div>
+                    <label>Gender <span>*</span></label>
+                    <div class="signup-radio">
+                      <input
+                        type="radio"
+                        class="gender"
+                        id="Male"
+                        name="gender"
+                        placeholder="Mobile number"
+                        required
+                      />
+                      <label for="Male">Male </label>
+                      <input
+                        type="radio"
+                        class="gender"
+                        id="Female"
+                        name="gender"
+                        placeholder="Mobile number"
+                        required
+                      />
+                      <label for="Female">Female </label>
+                      <input
+                        type="radio"
+                        class="gender"
+                        id="Other"
+                        name="gender"
+                        placeholder="Mobile number"
+                        required
+                      />
+                      <label for="Other">Other </label>
+                    </div>
+                  </div>
+                  <p class="signup-b-left-p">
+                    <label for="country">Country <span>*</span></label>
+                    <select name="country" id="country">
+                      <option value="Country">Country</option>
+                    </select>
+                  </p>
+                  <p class="signup-b-left-p">
+                    <label for="state">State <span>*</span></label>
+                    <select name="state" id="state">
+                      <option value="State">State</option>
+                    </select>
+                  </p>
+                  <p class="signup-b-left-p">
+                    <label for="city">City <span>*</span></label>
+                    <select name="city" id="city">
+                      <option value="City">City</option>
+                    </select>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button id="signup-btn">
+              <a href="#" class="btn">Sign Up</a>
+            </button>
+          </div>
+        </div>
+        <div class="dnone col-right" id="col-right-id">
+          <div class="login-form">
+            <h2>Login</h2>
+            <form action="">
+              <p>
+                <label for="email">Username/Email address<span>*</span></label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Username or Email"
+                  required
+                />
+              </p>
+              <p>
+                <label for="pwd">Password<span>*</span></label>
+                <input
+                  type="password"
+                  id="pwd"
+                  placeholder="Password"
+                  required
+                />
+              </p>
+              <p>
+                <input type="submit" value="Sign In" />
+              </p>
+              <p><a href="">Forgot password?</a></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- * profile view -->
+    <div class="profile-view">
+      <div class="profile-col-right">
+        <!-- ! img src from backend -->
+        <div class="profile-img-container">
+          <img src="" alt="" />
+        </div>
+      </div>
+      <div class="profile-col-left">
+        <div class="sub-profile-left">
+          <!-- !! below are using contenteditable property in html -->
+          <!-- <h3 contenteditable id="">First Name</h3>
+            <h3 contenteditable id="">Last Name</h3>
+            <h3 contenteditable id="">Email</h3>
+            <h3 contenteditable id="">Number</h3> -->
+
+          <!-- !! below are normally updating from user input -->
+          <p>
+            <label for="fname-edit">First Name</label>
+            <input
+              type="text"
+              id="fname-edit"
+              placeholder="First Name"
+              value="James"
+            />
+          </p>
+          <p>
+            <label for="lname-edit">Last Name</label>
+            <input
+              type="text"
+              id="lname-edit"
+              placeholder="Last Name"
+              value="Bond"
+            />
+          </p>
+          <p>
+            <label for="email-edit">Email</label>
+            <input
+              type="email"
+              id="email-edit"
+              placeholder="Email"
+              value="xyz@mail.com"
+            />
+          </p>
+          <p>
+            <label for="number-edit">Number</label>
+            <input
+              type="number"
+              id="number-edit"
+              placeholder="Number"
+              value="0123456789"
+              class="number"
+            />
+          </p>
+          <p>
+            <label for="pwd-edit">Password</label>
+            <input
+              type="password"
+              id="pwd-edit"
+              placeholder="Password"
+              value="********"
+            />
+          </p>
+        </div>
+        <div class="sub-profile-right">
+          <div class="gender-update">
+            <label>Gender</label>
+            <div class="signup-radio">
+              <input
+                type="radio"
+                class="gender"
+                id="Male-update"
+                name="gender"
+                placeholder="Mobile number"
+                required
+              />
+              <label for="Male-update">Male </label>
+              <input
+                type="radio"
+                class="gender"
+                id="Female-update"
+                name="gender"
+                placeholder="Mobile number"
+                required
+              />
+              <label for="Female-update">Female </label>
+              <input
+                type="radio"
+                class="gender"
+                id="Other-update"
+                name="gender"
+                placeholder="Mobile number"
+                required
+              />
+              <label for="Other-update">Other </label>
+            </div>
+          </div>
+          <p class="signup-b-left-p">
+            <label for="country">Country <span>*</span></label>
+            <select name="country" id="country">
+              <option value="Country">Country</option>
+            </select>
+          </p>
+          <p class="signup-b-left-p">
+            <label for="state">State <span>*</span></label>
+            <select name="state" id="state">
+              <option value="State">State</option>
+            </select>
+          </p>
+          <p class="signup-b-left-p">
+            <label for="city">City <span>*</span></label>
+            <select name="city" id="city">
+              <option value="City">City</option>
+            </select>
+          </p>
+          <p>
+            <label for="pwd-re-edit">Re-enter Password</label>
+            <input
+              type="password"
+              id="pwd-re-edit"
+              placeholder="Re-enter Password"
+              value="********"
+            />
+          </p>
+        </div>
+      </div>
+      <div class="save-cancel-btn">
+        <button id="save-btn">Save</button>
+        <button>Cancel</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
